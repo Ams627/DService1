@@ -5,3 +5,5 @@ To create a Window that can bring up a dialog we do this:
   2. Create a new ActualDialog<DialogWindow class>(dialogviewmodel)
   3. Create a viewmodel for the mainwindow - the viewmodel class takes an IDialogService as a constructor parameter: it can be passed anything that implements IDialogService
   4. Set the datacontext of the main window to the viewmodel for the mainwindow
+
+This doesn't actually work however, since, ideally, we need to create the viewmodel with a parameter. We can pass a parameter to the Dialog, but at this point the viewmodel is already created.
